@@ -1,0 +1,137 @@
+{
+  "js_banner": {
+    "type": "Slice",
+    "description": "JS banner 2 image",
+    "fieldset": "JS banner 2 images",
+    "icon": "ondemand_video",
+    "non-repeat": {
+      "FirstPicture": {
+        "config": {
+          "label": "First picture",
+          "constraint": {
+            "width": 1680,
+            "height": 900
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 800,
+              "height": 800
+            }
+          ]
+        },
+        "type": "Image"
+      },
+      "SecondPicture": {
+        "config": {
+          "label": "Second picture",
+          "constraint": {
+            "width": 1680,
+            "height": 900
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 800,
+              "height": 800
+            }
+          ]
+        },
+        "type": "Image"
+      },
+      "ShowBoxMobile": {
+        "config": {
+          "label": "What box show for mobile",
+          "placeholder": "",
+          "options": [
+            "first",
+            "second"
+          ]
+        },
+        "type": "Select"
+      },
+      "AlignContentBox": {
+        "config": {
+          "label": "Set align content box",
+          "placeholder": "",
+          "options": [
+            "center",
+            "left",
+            "right"
+          ]
+        },
+        "type": "Select"
+      },
+      "Title": {
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "TitleColor": {
+        "config": {
+          "label": "Title text color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "SubTitle": {
+        "config": {
+          "label": "Sub title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "SubTitleColor": {
+        "config": {
+          "label": "Subtitle text color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "ButtonLabel": {
+        "config": {
+          "label": "Button text",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ButtonLink": {
+        "config": {
+          "label": "Button link",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ButtonColor": {
+        "config": {
+          "label": "Button background color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "ButtonColorHover": {
+        "config": {
+          "label": "Button background : hover",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "ButtonTextColor": {
+        "config": {
+          "label": "Button text color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "ButtonTextColorHover": {
+        "config": {
+          "label": "Button text color : hover",
+          "placeholder": ""
+        },
+        "type": "Color"
+      }
+    }
+  }
+}

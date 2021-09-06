@@ -1,0 +1,146 @@
+.jts-banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  &__box {
+    width: 100%;
+    position: relative;
+    background-color: #909090;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    @include mq(md) {
+      width: 50%;
+      height: 506px;
+    }
+
+    @include mq(xxl) {
+      width: 50%;
+      height: 800px;
+    }
+
+    .is-mobile-first & {
+      @include mq-less(md) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+
+    .is-mobile-last & {
+      @include mq-less(md) {
+        &:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+
+    &-pic {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    max-width: 1440px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2.5rem;
+    box-sizing: border-box;
+    @include mq(md) {
+      padding-bottom: 0;
+    }
+
+    @include mq(md) {
+      align-items: center;
+    }
+
+    &.is-center {
+      justify-content: center;
+
+      .jts-banner__container-box {
+        text-align: center;
+      }
+    }
+
+    &.is-left {
+      justify-content: flex-start;
+    }
+
+    &.is-right {
+      text-align: right;
+      justify-content: flex-end;
+    }
+
+    &-box {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  &__btn {
+    @include tr;
+    max-width: 200px;
+    text-transform: uppercase;
+    height: 40px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    margin: 0 0 0.3em 0;
+    text-shadow: 1px 1px 1px rgba(#000, 0.3);
+    font-size: 2rem;
+    @include mq(md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(#000, 0.3);
+    margin: 0 0 1em 0;
+    font-size: 1rem;
+    @include mq(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    -webkit-border-radius: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    &-view {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

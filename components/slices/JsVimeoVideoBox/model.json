@@ -1,0 +1,43 @@
+{
+  "js_vimeo_video_box": {
+    "type": "Slice",
+    "description": "Vimeo Video Box",
+    "fieldset": "Vimeo video box",
+    "icon": "ondemand_video",
+    "non-repeat": {
+      "PosterVideo": {
+        "config": {
+          "label": "Chose video poster",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "IdVimeo": {
+        "config": {
+          "label": "Vimeo video ID",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "VideoRatio": {
+        "config": {
+          "label": "Set video ratio",
+          "placeholder": "",
+          "options": [
+            "16:9",
+            "4:3"
+          ]
+        },
+        "type": "Select"
+      },
+      "TitleVideo": {
+        "config": {
+          "label": "Title video",
+          "placeholder": "Just Sunnies Video"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
