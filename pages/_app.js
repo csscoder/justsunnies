@@ -1,3 +1,4 @@
+import "../styles/general/global.css"
 import "../styles/js-slices/style.scss"
 
 function MyApp({ Component, pageProps }) {

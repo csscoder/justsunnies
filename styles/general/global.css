@@ -1,0 +1,48 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-nova, sans-serif !important;
+  font-weight: 300;
+  overflow-x: hidden;
+  font-style: normal
+}
+
+a, a:active, a:focus, a:focus-visible, a:focus-within, a:hover, a:target, a:visited {
+  color: #2db4e6;
+  text-decoration: none !important
+}
+
+*, :after, :before {
+  box-sizing: border-box
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-hero {
+  max-width: 1440px
+}
+
+.container-full {
+  max-width: 100%;
+  padding: 0
+}
+
+.container-article {
+  max-width: 1140px
+}
+
+.container-slim {
+  max-width: 900px
+}

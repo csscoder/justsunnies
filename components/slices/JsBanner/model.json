@@ -1,43 +1,80 @@
 {
   "js_banner": {
     "type": "Slice",
-    "description": "JS banner 2 image",
-    "fieldset": "JS banner 2 images",
-    "icon": "ondemand_video",
+    "fieldset": "JS banner",
+    "description": "JS banner",
+    "icon": "image",
+    "display": "list",
     "non-repeat": {
-      "FirstPicture": {
+      "first_picture": {
         "config": {
           "label": "First picture",
           "constraint": {
-            "width": 1680,
-            "height": 900
+            "width": 700,
+            "height": 700
           },
           "thumbnails": [
             {
               "name": "mobile",
-              "width": 800,
-              "height": 800
+              "width": 400,
+              "height": 400
             }
           ]
         },
         "type": "Image"
       },
-      "SecondPicture": {
+      "first_video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "First video"
+        }
+      },
+      "first_video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 700,
+            "height": 700
+          },
+          "thumbnails": [],
+          "label": "First video poster"
+        }
+      },
+      "second_picture": {
         "config": {
           "label": "Second picture",
           "constraint": {
-            "width": 1680,
-            "height": 900
+            "width": 700,
+            "height": 700
           },
           "thumbnails": [
             {
               "name": "mobile",
-              "width": 800,
-              "height": 800
+              "width": 400,
+              "height": 400
             }
           ]
         },
         "type": "Image"
+      },
+      "second_video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Second video"
+        }
+      },
+      "second_video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 700,
+            "height": 700
+          },
+          "thumbnails": [],
+          "label": "Second video poster"
+        }
       },
       "ShowBoxMobile": {
         "config": {
@@ -71,8 +108,7 @@
       },
       "TitleColor": {
         "config": {
-          "label": "Title text color",
-          "placeholder": ""
+          "label": "Title text color"
         },
         "type": "Color"
       },
@@ -85,8 +121,7 @@
       },
       "SubTitleColor": {
         "config": {
-          "label": "Subtitle text color",
-          "placeholder": ""
+          "label": "Subtitle text color"
         },
         "type": "Color"
       },
@@ -106,32 +141,29 @@
       },
       "ButtonColor": {
         "config": {
-          "label": "Button background color",
-          "placeholder": ""
+          "label": "Button background color"
         },
         "type": "Color"
       },
       "ButtonColorHover": {
         "config": {
-          "label": "Button background : hover",
-          "placeholder": ""
+          "label": "Button background : hover"
         },
         "type": "Color"
       },
       "ButtonTextColor": {
         "config": {
-          "label": "Button text color",
-          "placeholder": ""
+          "label": "Button text color"
         },
         "type": "Color"
       },
       "ButtonTextColorHover": {
         "config": {
-          "label": "Button text color : hover",
-          "placeholder": ""
+          "label": "Button text color : hover"
         },
         "type": "Color"
       }
-    }
+    },
+    "repeat": {}
   }
 }

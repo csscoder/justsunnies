@@ -5,7 +5,6 @@ import {
 } from './'
 
 const JsSliceZone = ({ JsSliceZone }) => {
-  console.log(JsSliceZone)
   return (
   <>
     {JsSliceZone.map((slice, index) => {
