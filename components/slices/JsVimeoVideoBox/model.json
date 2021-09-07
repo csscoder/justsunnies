@@ -1,9 +1,10 @@
 {
   "js_vimeo_video_box": {
     "type": "Slice",
+    "fieldset": "JS Vimeo video box",
     "description": "Vimeo Video Box",
-    "fieldset": "Vimeo video box",
     "icon": "ondemand_video",
+    "display": "list",
     "non-repeat": {
       "PosterVideo": {
         "config": {
@@ -22,7 +23,7 @@
       },
       "VideoRatio": {
         "config": {
-          "label": "Set video ratio",
+          "label": "",
           "placeholder": "",
           "options": [
             "16:9",
@@ -38,6 +39,7 @@
         },
         "type": "Text"
       }
-    }
+    },
+    "repeat": {}
   }
 }

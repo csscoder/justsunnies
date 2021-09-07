@@ -1,4 +1,8 @@
 @import "./csscoder-lib";
 
+// style for js-product slider
+@import "/node_modules/tiny-slider/src/tiny-slider.scss";
+
 @import "../../components/slices/JsVimeoVideoBox/style";
 @import "../../components/slices/JsBanner/style";
+@import "../../components/slices/JsCarouselProduct/style";

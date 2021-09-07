@@ -1,0 +1,56 @@
+{
+
+  "js_carousel_product" : {
+    "type" : "Slice",
+    "fieldset" : "JS Product Slider",
+    "description" : "JS Product slider",
+    "non-repeat" : {
+      "title" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Title"
+        }
+      },
+      "title_align" : {
+        "config" : {
+          "label" : "Title align",
+          "placeholder" : "",
+          "options" : [ "left", "center", "right" ],
+          "default_value" : ""
+        },
+        "type" : "Select"
+      }
+    },
+    "repeat" : {
+      "picture_slide" : {
+        "config" : {
+          "label" : "",
+          "constraint" : { },
+          "thumbnails" : [ ]
+        },
+        "type" : "Image"
+      },
+      "title_slide" : {
+        "config" : {
+          "label" : "Title",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      },
+      "description_slide" : {
+        "config" : {
+          "label" : "Description",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      },
+      "link_slide" : {
+        "config" : {
+          "label" : "Link",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      }
+    }
+  }
+}
