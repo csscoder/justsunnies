@@ -26,5 +26,4 @@ const JsCatalogBanner = ({slice}) => (
     </div>
   </section>
 )
-
 export default JsCatalogBanner

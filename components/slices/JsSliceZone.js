@@ -3,7 +3,8 @@ import {
   JsVimeoVideoBox,
   JsBanner,
   JsCarouselProduct,
-  JsCatalogBanner
+  JsCatalogBanner,
+  JsGalleryCards
 } from './'
 
 const JsSliceZone = ({ JsSliceZone }) => {
@@ -19,6 +20,8 @@ const JsSliceZone = ({ JsSliceZone }) => {
           return <JsCarouselProduct slice={slice} key={`slice-${index}`} />
         case ('js_catalog_banner'):
           return <JsCatalogBanner slice={slice} key={`slice-${index}`} />
+        case ('js_gallery_card'):
+          return <JsGalleryCards slice={slice} key={`slice-${index}`} />
         default:
           return null
       }

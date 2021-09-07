@@ -1,0 +1,114 @@
+{
+  "js_gallery_card": {
+    "type": "Slice",
+    "fieldset": "JS Gallery Cards",
+    "description": "JS Gallery Cards",
+    "icon": "collections",
+    "display": "list",
+    "non-repeat": {},
+    "repeat": {
+      "Picture": {
+        "config": {
+          "label": "Set picture",
+          "constraint": {
+            "width": 600,
+            "height": 750
+          },
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "Video": {
+        "config": {
+          "label": "Video",
+          "placeholder": "",
+          "select": "media",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "VideoPoster": {
+        "config": {
+          "label": "Video poster",
+          "constraint": {
+            "width": 600,
+            "height": 750
+          },
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "Title": {
+        "config": {
+          "label": "",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "Description": {
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        },
+        "type": "StructuredText"
+      },
+      "AlignContent": {
+        "config": {
+          "label": "Align content",
+          "placeholder": "",
+          "options": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default_value": ""
+        },
+        "type": "Select"
+      },
+      "ShopLink1": {
+        "config": {
+          "label": "Shop Link 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "LabelShopLink1": {
+        "config": {
+          "label": "Label shop link 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ShopLink2": {
+        "config": {
+          "label": "Shop Link 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "LabelShopLink2": {
+        "config": {
+          "label": "Label shop link 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ShopLink3": {
+        "config": {
+          "label": "Shop Link 3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "LabelShopLink3": {
+        "config": {
+          "label": "Label shop link 3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
