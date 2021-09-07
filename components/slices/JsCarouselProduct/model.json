@@ -1,55 +1,63 @@
 {
 
-  "js_carousel_product" : {
-    "type" : "Slice",
-    "fieldset" : "JS Product Slider",
-    "description" : "JS Product slider",
-    "non-repeat" : {
-      "title" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "Title"
+  "js_carousel_product": {
+    "type": "Slice",
+    "fieldset": "JS Product Slider",
+    "description": "JS Product slider",
+    "icon": "card_travel",
+    "display": "list",
+    "non-repeat": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title"
         }
       },
-      "title_align" : {
-        "config" : {
-          "label" : "Title align",
-          "placeholder" : "",
-          "options" : [ "left", "center", "right" ],
-          "default_value" : ""
+      "title_align": {
+        "config": {
+          "label": "Title align",
+          "placeholder": "",
+          "options": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default_value": ""
         },
-        "type" : "Select"
+        "type": "Select"
       }
     },
-    "repeat" : {
-      "picture_slide" : {
-        "config" : {
-          "label" : "",
-          "constraint" : { },
-          "thumbnails" : [ ]
-        },
-        "type" : "Image"
+    "repeat": {
+      "picture_slide": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 300
+          },
+          "thumbnails": [],
+          "label": "Image"
+        }
       },
-      "title_slide" : {
-        "config" : {
-          "label" : "Title",
-          "placeholder" : ""
+      "title_slide": {
+        "config": {
+          "label": "Title",
+          "placeholder": ""
         },
-        "type" : "Text"
+        "type": "Text"
       },
-      "description_slide" : {
-        "config" : {
-          "label" : "Description",
-          "placeholder" : ""
+      "description_slide": {
+        "config": {
+          "label": "Description",
+          "placeholder": ""
         },
-        "type" : "Text"
+        "type": "Text"
       },
-      "link_slide" : {
-        "config" : {
-          "label" : "Link",
-          "placeholder" : ""
+      "link_slide": {
+        "config": {
+          "label": "Link",
+          "placeholder": ""
         },
-        "type" : "Text"
+        "type": "Text"
       }
     }
   }

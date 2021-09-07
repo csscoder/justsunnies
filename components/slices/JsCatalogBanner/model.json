@@ -1,0 +1,42 @@
+{
+  "js_catalog_banner" : {
+    "type" : "Slice",
+    "fieldset" : "JS Catalog Banner",
+    "description" : "JS Catalog Banner",
+    "icon" : "aspect_ratio",
+    "display" : "list",
+    "non-repeat" : {
+      "Banner" : {
+        "config" : {
+          "label" : "Banner image ",
+          "constraint" : {
+            "height" : 260,
+            "width" : 1440
+          },
+          "thumbnails" : [ {
+            "name" : "mobile",
+            "width" : 768,
+            "height" : 160
+          } ]
+        },
+        "type" : "Image"
+      }
+    },
+    "repeat" : {
+      "LinkTitle" : {
+        "config" : {
+          "label" : "Title link",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      },
+      "Link" : {
+        "config" : {
+          "label" : "Link",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.jts-catalog-banner {
+  width: 100%;
+  position: relative;
+
+  &__box {
+    position: relative;
+    height: 160px;
+    background-color: #ccc;
+    @include mq(md) {
+      height: 260px;
+    }
+
+    &-pic {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
+      @include mq(md) {
+        object-position: center;
+      }
+    }
+  }
+
+  &__menu {
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: #eeeeee;
+
+    &-box {
+      margin: -20px 0 0 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #282828;
+      font-weight: 500;
+      flex-wrap: wrap;
+      @include mq(md) {
+        font-size: 1rem;
+      }
+    }
+
+    &-item {
+      margin: 20px 0 0 0;
+      padding: 0 10px;
+      color: #2f2f2f;
+    }
+
+    &-link {
+      color: #2f2f2f;
+      @include tr;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

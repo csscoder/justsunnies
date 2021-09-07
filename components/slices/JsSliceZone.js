@@ -2,7 +2,8 @@ import React from 'react'
 import {
   JsVimeoVideoBox,
   JsBanner,
-  JsCarouselProduct
+  JsCarouselProduct,
+  JsCatalogBanner
 } from './'
 
 const JsSliceZone = ({ JsSliceZone }) => {
@@ -16,6 +17,8 @@ const JsSliceZone = ({ JsSliceZone }) => {
           return <JsBanner slice={slice} key={`slice-${index}`} />
         case ('js_carousel_product'):
           return <JsCarouselProduct slice={slice} key={`slice-${index}`} />
+        case ('js_catalog_banner'):
+          return <JsCatalogBanner slice={slice} key={`slice-${index}`} />
         default:
           return null
       }
