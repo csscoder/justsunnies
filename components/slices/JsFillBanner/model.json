@@ -1,0 +1,116 @@
+{
+  "js_fill_banner": {
+    "type": "Slice",
+    "fieldset": "JS Fill Banner",
+    "description": "JS Fill Banner",
+    "icon": "aspect_ratio",
+    "non-repeat": {
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Background color"
+        }
+      },
+      "align_cover": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "left",
+            "right"
+          ],
+          "label": "Align cover"
+        }
+      },
+      "picture": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 700,
+            "height": 700
+          },
+          "thumbnails": [],
+          "label": "Picture"
+        }
+      },
+      "video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Video"
+        }
+      },
+      "video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 700,
+            "height": 700
+          },
+          "thumbnails": [],
+          "label": "Video poster"
+        }
+      },
+      "text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Text color"
+        }
+      },
+      "sub_heading": {
+        "type": "Text",
+        "config": {
+          "label": "Sub heading"
+        }
+      },
+      "heading": {
+        "type": "Text",
+        "config": {
+          "label": "Heading"
+        }
+      },
+      "content": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Content"
+        }
+      },
+      "button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Button label"
+        }
+      },
+      "button_link": {
+        "type": "Text",
+        "config": {
+          "label": "Button link"
+        }
+      },
+      "button_label_color": {
+        "type": "Color",
+        "config": {
+          "label": "Button label color"
+        }
+      },
+      "button_label_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Button label color hover"
+        }
+      },
+      "button_background": {
+        "type": "Color",
+        "config": {
+          "label": "Button background"
+        }
+      },
+      "button_background_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Button background hover"
+        }
+      }
+    }
+  }
+}

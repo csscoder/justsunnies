@@ -40,11 +40,11 @@ const JsGalleryCards = ({slice}) => {
                     let propsLinkLabel = `LabelShopLink${i+1}`
                     return (
                       item[propsLink] ? (
-                        <a href={item[propsLink]} className="jts-gallery-cards__item-link">
+                        <a href={item[propsLink]} className="jts-gallery-cards__item-link" key={`item-${i}`}>
                           {item[propsLinkLabel]}
                         </a>
                       ) : (
-                        <></>
+                        ''
                       )
                     )
                   }
