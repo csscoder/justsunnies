@@ -39,11 +39,11 @@ const JsImageOverlay = ({slice}) => (
       .jts-image-overlay__in {
         background-color: ${slice.primary.background_color};
       }
-      .jts-image-overlay__btn {
+      a.jts-image-overlay__btn {
         background-color: ${slice.primary.button_background};
         color: ${slice.primary.button_label_color};
       }
-      .jts-image-overlay__btn:hover {
+      a.jts-image-overlay__btn:hover {
         background-color: ${slice.primary.button_background_hover};
         color: ${slice.primary.button_label_color_hover};
       }
