@@ -5,7 +5,8 @@ import {
   JsCarouselProduct,
   JsCatalogBanner,
   JsGalleryCards,
-  JsFillBanner
+  JsFillBanner,
+  JsImageOverlay
 } from './'
 
 const JsSliceZone = ({ JsSliceZone }) => {
@@ -25,6 +26,8 @@ const JsSliceZone = ({ JsSliceZone }) => {
           return <JsGalleryCards slice={slice} key={`slice-${index}`} />
         case ('js_fill_banner'):
           return <JsFillBanner slice={slice} key={`slice-${index}`} />
+        case ('js_image_overlay'):
+          return <JsImageOverlay slice={slice} key={`slice-${index}`} />
         default:
           return null
       }

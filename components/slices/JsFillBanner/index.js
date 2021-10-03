@@ -40,7 +40,6 @@ const JsFillBanner = ({slice}) => (
       </div>
     </div>
 
-
     <style>{`
       .jts-fill-banner {
         background-color: ${slice.primary.background_color};

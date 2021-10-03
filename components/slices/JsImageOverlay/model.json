@@ -1,0 +1,155 @@
+{
+  "js_image_overlay": {
+    "type": "Slice",
+    "fieldset": "JS Image Overlay",
+    "description": "Image Overlay",
+    "icon": "aspect_ratio",
+    "display": "list",
+    "non-repeat": {
+      "width": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "hero",
+            "article",
+            "full"
+          ],
+          "label": "Width",
+          "placeholder": "Set width box"
+        }
+      },
+      "align_content": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "left",
+            "center",
+            "right"
+          ],
+          "label": "Align content",
+          "placeholder": "Set align content"
+        }
+      },
+      "content_box": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Content box",
+          "placeholder": "Set content"
+        }
+      },
+      "content_color_text": {
+        "type": "Color",
+        "config": {
+          "label": "Content color text"
+        }
+      },
+      "mobile_content_color_text": {
+        "type": "Color",
+        "config": {
+          "label": "Mobile content color text"
+        }
+      },
+      "button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Button label"
+        }
+      },
+      "button_link": {
+        "type": "Text",
+        "config": {
+          "label": "Button link"
+        }
+      },
+      "button_label_color": {
+        "type": "Color",
+        "config": {
+          "label": "Button label color"
+        }
+      },
+      "button_label_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Button label color hover"
+        }
+      },
+      "button_background": {
+        "type": "Color",
+        "config": {
+          "label": "Button background"
+        }
+      },
+      "button_background_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Button background hover"
+        }
+      },
+      "mobile_content_position": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "inner",
+            "outside"
+          ],
+          "label": "Mobile content position",
+          "placeholder": "Set position for mobile"
+        }
+      },
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Background color"
+        }
+      },
+      "align_cover": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "left",
+            "center",
+            "right"
+          ],
+          "label": "Align cover"
+        }
+      },
+      "picture": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1400,
+            "height": 460
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 400,
+              "height": 400
+            }
+          ],
+          "label": "Picture"
+        }
+      },
+      "video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Video"
+        }
+      },
+      "video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1400,
+            "height": 800
+          },
+          "thumbnails": [],
+          "label": "Video poster"
+        }
+      }
+    },
+    "repeat": {}
+  }
+}
