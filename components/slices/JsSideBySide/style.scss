@@ -1,0 +1,171 @@
+.jts-side-by-side {
+  position: relative;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include mq(md) {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      width: 1px;
+      margin-left: -1px;
+      display: block;
+      @include mq-less(md) {
+        padding-top: 100% !important;
+      }
+    }
+
+    .jts-side-by-side__row.is-columns-two & {
+      width: 100%;
+      @include mq(md) {
+        @include col(6, 2, 20px);
+      }
+      @include mq(xl) {
+        @include col(6, 2, 36px);
+      }
+    }
+    .jts-side-by-side__row.is-columns-three & {
+      width: 100%;
+      @include mq(md) {
+        @include col(4, 3, 20px);
+      }
+    }
+  }
+
+  &__box {
+    z-index: 200;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 100%;
+    width: 100%;
+    padding: 25px 20px;
+
+    .is-columns-two & {
+      @include mq(lg) {
+        padding: 36px 20px;
+      }
+    }
+
+    .is-content-left &{
+      text-align: left;
+    }
+    .is-content-right & {
+      text-align: right;
+    }
+    .is-content-center & {
+      text-align: center;
+    }
+
+    .is-valign-top & {
+      align-items: flex-start;
+    }
+    .is-valign-middle & {
+      align-items: center;
+    }
+    .is-valign-bottom & {
+      align-items: flex-end;
+    }
+  }
+
+  &__btn {
+    height: 41px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 50px;
+    line-height: 1;
+
+    .is-columns-two & {
+      height: 50px;
+      padding: 0 50px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+
+    &-note {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 1.6em;
+      @include mq(lg) {
+        font-size: 18px;
+      }
+
+      .is-columns-three & {
+        @include mq(lg) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-heading {
+      font-size: em(26, 14);
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 0.6em;
+    }
+    &-subheading {
+      font-size: em(18, 14);
+    }
+  }
+
+  &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-pic {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &.is-cover-left {
+        object-position: 0 50%;
+      }
+      &.is-cover-center {
+        object-position: 50% 50%;
+      }
+      &.is-cover-right {
+        object-position: 100% 50%;
+      }
+    }
+
+    &-video {
+      position: absolute;
+      -webkit-border-radius: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      &-view {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        z-index: 20;
+      }
+    }
+  }
+}

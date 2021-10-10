@@ -6,7 +6,8 @@ import {
   JsCatalogBanner,
   JsGalleryCards,
   JsFillBanner,
-  JsImageOverlay
+  JsImageOverlay,
+  JsSideBySide
 } from './'
 
 const JsSliceZone = ({ JsSliceZone }) => {
@@ -28,6 +29,8 @@ const JsSliceZone = ({ JsSliceZone }) => {
           return <JsFillBanner slice={slice} key={`slice-${index}`} />
         case ('js_image_overlay'):
           return <JsImageOverlay slice={slice} key={`slice-${index}`} />
+        case ('js_side_by_side'):
+          return <JsSideBySide slice={slice} key={`slice-${index}`} />
         default:
           return null
       }

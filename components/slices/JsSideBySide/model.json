@@ -1,0 +1,162 @@
+{
+  "js_side_by_side" : {
+    "type" : "Slice",
+    "fieldset" : "JS Side By Side Unlimited",
+    "description" : "Side By Side Unlimited",
+    "icon" : "burst_mode",
+    "display" : "list",
+    "non-repeat" : {
+      "width" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "hero", "article", "full" ],
+          "label" : "Width",
+          "placeholder" : "Set width box"
+        }
+      },
+      "size_of_boxes" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "square", "portrait", "rectangle" ],
+          "label" : "Size of boxes",
+          "placeholder" : "Set size of the boxes"
+        }
+      },
+      "column" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "two", "three" ],
+          "label" : "Column",
+          "placeholder" : "Set the number of columns in a row"
+        }
+      },
+      "align_content" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "left", "center", "right" ],
+          "label" : "Align content",
+          "placeholder" : "Set align content"
+        }
+      },
+      "vertical_align" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "top", "middle", "bottom" ],
+          "label" : "Vertical align",
+          "placeholder" : "Set vertical align"
+        }
+      },
+      "button_label_color" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Button label color"
+        }
+      },
+      "button_label_color_hover" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Button label color hover"
+        }
+      },
+      "button_background" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Button background"
+        }
+      },
+      "button_background_hover" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Button background hover"
+        }
+      }
+    },
+    "repeat" : {
+      "vertical_align_content" : {
+        "type" : "Select",
+        "config" : {
+          "options" : [ "top", "middle", "bottom" ],
+          "label" : "Vertical align content",
+          "placeholder" : "Set vertical align"
+        }
+      },
+      "heading" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Heading",
+          "placeholder" : "Set heading"
+        }
+      },
+      "sub_heading" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Sub heading",
+          "placeholder" : "Set sub heading"
+        }
+      },
+      "content_color_text" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Content color text"
+        }
+      },
+      "mobile_content_color_text" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Mobile content color text"
+        }
+      },
+      "button_label" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Button label"
+        }
+      },
+      "button_link" : {
+        "type" : "Text",
+        "config" : {
+          "label" : "Button link"
+        }
+      },
+      "background_color" : {
+        "type" : "Color",
+        "config" : {
+          "label" : "Background color"
+        }
+      },
+      "picture" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : {
+            "width" : 682,
+            "height" : 890
+          },
+          "thumbnails" : [ {
+            "name" : "mobile",
+            "width" : 400,
+            "height" : 400
+          } ],
+          "label" : "Picture"
+        }
+      },
+      "video" : {
+        "type" : "Link",
+        "config" : {
+          "select" : "media",
+          "label" : "Video"
+        }
+      },
+      "video_poster" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : {
+            "width" : 682,
+            "height" : 890
+          },
+          "thumbnails" : [ ],
+          "label" : "Video poster"
+        }
+      }
+    }
+  }
+}
